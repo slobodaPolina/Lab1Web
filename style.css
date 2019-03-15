@@ -1,0 +1,139 @@
+h1 {
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+
+.card-wrapper {
+	width: 100%;
+	margin-top: 54px;
+	display: grid;
+	row-gap: 50px;
+}
+
+@media (min-width: 1500px) {
+	.card-wrapper {
+			grid-template-columns: repeat(3, 1fr);
+	}
+}
+@media (max-width: 1499px) and (min-width: 1000px) {
+	.card-wrapper {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media (max-width: 999px) {
+	.card-wrapper {
+			grid-template-columns: 1fr;
+	}
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid #0D87FF;
+	box-sizing: border-box;
+	padding: 8px 16px;
+	margin: 0 20px;
+}
+
+.card-content-wrapper {
+	display: grid;
+}
+
+@media (min-width: 520px) {
+	.card-content-wrapper {
+		grid-template-columns: 1.5fr 1fr;
+	}
+}
+
+@media (max-width: 519px) {
+	.card-content-wrapper {
+		grid-template-columns: 1fr;
+	}
+}
+
+.info-wrapper {
+	text-align: center;
+}
+
+.title {
+	font-size: 20px;
+	text-decoration: none;
+	align-self: center;
+	padding-right: 40%;
+}
+
+.information {
+	padding-top: 8px;
+	font-style: italic;
+}
+
+.rubrics {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-left: 20px;
+	margin-top: 20px;
+}
+
+.rubrics > span {
+	text-align: center;
+}
+
+.specialities {
+	padding-top: 20px;
+	color: red;
+	width: 90%;
+	margin: auto;
+	text-align: center;
+}
+
+.card span {
+	font-size: 16px;
+	color: #283544;
+}
+
+#footer {
+		padding: 48px;
+		background: #172132;
+		justify-content: space-between;
+}
+
+.footer-info {
+	align-items: flex-start;
+	color: #43A1FF;
+}
+
+.footer-list > span:not(:first-child) {
+	margin-top: 16px;
+}
+
+		.footer-list > span:not(:first-child):hover {
+			cursor: pointer;
+		}
+
+.footer-list > span:first-child {
+	color: white;
+	font-size: 18px;
+	margin-bottom: 8px;
+}
+
+.sign-up {
+	border: 2px solid #0D87FF;
+	box-sizing: border-box;
+	color: white;
+	padding: 8px 16px;
+	margin-left: 24px;
+}
+
+.flex-row {
+	justify-content: space-between;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
