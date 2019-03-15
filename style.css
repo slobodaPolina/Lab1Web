@@ -94,7 +94,8 @@ h1 {
 }
 
 #footer {
-		padding: 48px;
+	margin-top: 30px;
+		padding: 50px;
 		background: #172132;
 		justify-content: space-between;
 }
@@ -136,4 +137,17 @@ h1 {
 .flex-column {
 	display: flex;
 	flex-direction: column;
+}
+
+html,
+body {
+  min-height: 100%;
+	margin: 0;
+}
+
+.body-wrapper {
+  display: flex;
+  flex-direction: column;
+	min-height: 100vh;
+	justify-content: space-between;
 }
